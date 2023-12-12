@@ -15,16 +15,16 @@ function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <NavLink className="nav-link" to={'/'}>Mujer</NavLink>
+                                <NavLink className="nav-link" to={'/category/Mujer'}>Mujer</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to={'/'}>Hombre</NavLink>
+                                <NavLink className="nav-link" to={'/category/Hombre'}>Hombre</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to={'/'}>Accesorios</NavLink>
+                                <NavLink className="nav-link" to={'/category/Accesorios'}>Accesorios</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to={'/'}>Electronica</NavLink>
+                                <NavLink className="nav-link" to={'/category/Electronica'}>Electronica</NavLink>
                             </li>
                         </ul>
                         {props.children}

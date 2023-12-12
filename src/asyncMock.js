@@ -248,3 +248,19 @@ export const getProducts = () => {
         }, 1000);
     });
 }
+
+export const getProductsById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(lista_productos.find(prod => prod.id === parseInt(productId)));
+        }, 500);
+    });
+}
+
+export const getProductsByCategory = (category) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(lista_productos.filter(prod => prod.category === category));
+        }, 500);
+    });
+}
